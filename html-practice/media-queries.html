@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    </head>
+    <style>
+    .background-demo{
+        height: 100px;
+        background:grey;
+        margin: 1px solid green;
+        margin-bottom: 20px;
+        background-color: antiquewhite;
+        color:white;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .parent{
+        border: 1px solid grey;
+        padding: 10px;
+        clear: both;
+        overflow: hidden;
+    }
+
+    .parent .child1, .parent .child2{
+        border: 1px solid grey;
+        padding: 10px;
+        widows: 50%;
+    }
+
+    .parent .child1{
+        float: left;
+    }
+
+    .parent .child2{
+        float: right;
+    }
+
+    @media only screen and (max-width:600px){
+        .background-demo{
+            background: red;
+        }
+
+        .parent .child1, .parent .child2{
+            width:95%;
+            float: none;
+        }
+        .parent .child1{
+            margin-bottom: 10px;
+        }
+    }
+
+    @media only screen and (min-width:600px){
+        .background-demo{
+            background:green;
+        }
+
+        .parent .child1, .parent .child2{
+            width:95%;
+            float: none;
+        }
+        .parent .child1{
+            margin-bottom: 10px;
+        }
+    }
+    @media only screen and (min-width:768px){
+        .background-demo{
+            background:yellow;
+        }
+
+        .parent .child1, .parent .child2{
+            width:90%;
+            float: none;
+        }
+        .parent .child1{
+            margin-bottom: 10px;
+        }
+    }
+
+    @media only screen and (min-width:992px){
+        .background-demo{
+            background:turquoise;
+        }
+
+        .parent .child1, .parent .child2{
+            width:95%;
+            float: none;
+        }
+        .parent .child1{
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (min-width:1200px){
+        .background-demo{
+            background:tomato;
+        }
+
+        .parent .child1, .parent .child2{
+            width:95%;
+            float: none;
+        }
+        .parent .child1{
+            margin-bottom: 10px;
+        }
+    }
+    </style>
+    <body>
+        <h3><a href="./index.html">Back to home</a></h3>
+        <div class="background-demo">
+            
+        </div>
+        <div class="parent">
+                <div class="child1">California</div>
+                <div class="child2">California is the beutiful place to live in USA</div>
+        </div>
+        <button onclick="hidecities()">Hide Cities</button>
+    </body>
+</html>

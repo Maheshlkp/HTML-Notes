@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    </head>
+    <style>
+    .cities{
+        background-color: antiquewhite;
+        color:white;
+        margin: 20px;
+        padding: 20px;
+
+    }
+    </style>
+    <body>
+        <h3><a href="./index.html">Back to home</a></h3>
+        <div class="cities">
+            <h1>Texas</h1>
+            <p>Texas is the best place to live in USA</p>
+        </div>
+        <div class="cities">
+                <h1>California</h1>
+                <p>California is the beutiful place to live in USA</p>
+        </div>
+        <button onclick="hidecities()">Hide Cities</button>
+        <script>
+        function hidecities(){
+            var cityElements=document.getElementsByClassName("cities");
+            for(var i=0;i<cityElements.length;i++){
+                cityElements[i].style.display="none";
+            }
+        }
+        </script>
+    </body>
+</html>

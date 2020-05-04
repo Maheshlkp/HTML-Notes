@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    </head>
+    <style>
+    .parent{
+        background-color: antiquewhite;
+        margin-bottom: 40px;
+    }
+
+    .parent>div{
+        background-color: burlywood;
+        width:100px;
+        margin: 10px 20px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+
+    .flex-container1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-container2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .flex-container3{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-container4{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .flex-container5{
+        display: flex;
+        flex-direction: wrap;
+    }
+
+    .flex-container6{
+        display: flex;
+        flex-direction: nowrap;
+    }
+
+    .flex-container12{
+        display: flex;
+        justify-content: center;
+        justify-content: end;
+        justify-content: space-around;
+        align-content: center;
+        align-content: flex-start;
+        align-content: space-around;
+    }
+    
+
+
+
+
+    </style>
+    <body>
+        <h3><a href="./index.html">Back to home</a></h3>
+        <h1>Parent / Flexbox Properties</h1>
+        <h2>1. flex-direction</h2>
+        <h3>flex-direction: column;</h3>
+        <div class="parent flex-container1">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+        </div>
+
+        <div class="parent flex-container2">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+        </div>
+
+        <div class="parent flex-container3">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+        </div>
+
+        <div class="parent flex-container4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+        </div>
+
+        <div class="parent flex-container5">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            
+        </div>
+
+        <div class="parent flex-container6">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+        </div>
+
+        <div class="parent flex-container12">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+        </div>
+
+        <div class="parent flex-container28">
+                <div style="order: 2">1</div>
+                <div style="order: 4">2</div>
+                <div style="order: 3">3</div>
+                <div style="order: 1">4</div>
+            </div>
+
+
+        <button onclick="hidecities()">Hide Cities</button>
+        <script>
+        function hidecities(){
+            var cityElements=document.getElementsByClassName("cities");
+            for(var i=0;i<cityElements.length;i++){
+                cityElements[i].style.display="none";
+            }
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    </head>
+    <body>
+        <a href="#bottom">Back to Home</a>
+        <a href="./index.html">Click to see the  data</a>
+        <style>
+
+            @keyframes change-backgrounds{
+                from {background-color: brown}
+                to {background-color: blueviolet}
+            }
+            .demo{
+                width:200px;
+                height: 300px;
+                background-color: grey;
+                animation-name: change-backgrounds;
+                animation-duration: 2s;
+
+                -webkit-transition: width 2s;
+                transition: width 2s;
+            }
+            .demo:hover{
+                width:300px;
+            }
+
+            @keyframes change-backgrounds-percentage{
+                0% {background-color: brown}
+                25% {background-color: blueviolet}
+                50% {background-color: blueviolet}
+                100% {background-color: blueviolet}
+
+            }
+            .demo2{
+                width:200px;
+                height: 300px;
+                background-color: grey;
+                animation-name: change-backgrounds-percentage;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+
+                
+            }
+            .demo2:hover{
+                width:300px;
+            }
+        
+        </style>
+                <div class="demo">Testing the animation data</div>
+
+        <div class="demo2">Testing the animation data</div>
+    </body>
+</html>

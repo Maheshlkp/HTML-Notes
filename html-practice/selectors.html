@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+</head>
+<style>
+    p{
+        text-align: center;
+        color: red;
+    }
+
+    #para1{
+        text-align: center;
+        color:green;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    .large{
+        font-size: 25px;
+    }
+
+    h1,h2,div{
+        text-align: center;
+        color: blue;
+
+    }
+
+    p.one{
+        margin-top:50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border: 1px solid grey;
+    }
+
+    div.first{
+        margin-left: 10px;
+    }
+
+    div.parent{
+        border: 1px solid red;
+    }
+
+    div.auto-demo{
+        width:50%;
+        margin:auto;
+    }
+
+
+
+
+
+</style>
+
+<body>
+    <h3><a href="./index.html">Back to home</a></h3>
+
+    <p>Some content in paragraph</p>
+    <p id="para1">Some content</p>
+    <h4 class="center large">Test Content</h4>
+    <h1>Header1</h1>
+    <h1>Header2</h1>
+    <h1>Some content</h1>
+
+    <div class="image-demo">Testing the data</div>
+
+    <p class="dotted">A dotted border</p>
+    <p class="dashed">A dotted border</p>
+    <p class="solid">A dotted border</p>
+    <p class="double">A dotted border</p>
+    <p class="groove">A dotted border</p>
+    <p class="mix">A dotted border</p>
+    <h1 id="myHeader">Texas</h1>
+    <iframe src="https://w3schools.com"></iframe>
+    <img src="./anchortag.html"/>
+
+    <h3><a href="./index.html">&lt;&lt; Back To Home</a></h3>
+        
+    <p class="one">Paragraph with some content.</p>
+
+    <div class="first">First</div> <br><br>
+
+    <div class="parent">
+        <div class="child">Child div content</div>
+    </div>
+
+    <br><br>
+    <div class="negative-demo">Div with some content.</div>
+
+    <br><br>
+    <div class="shorthand-demo">Div with some content.</div>
+
+    <br><br>
+    <div class="auto-demo">Div with some content</div>
+
+    <br><br>
+    <div class="collapse1">Div with some content</div>
+    <div class="collapse2">Div with some content</div>
+    
+    <button onclick="updateHeader()">Update Cities</button>
+    <script>
+        function updateHeader() {
+            document.getElementById("myHeader").innerHTML = "I love my state";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+</head>
+<style>
+    .myHeader {
+        background-color: lightblue;
+        color: black;
+        margin: 20px;
+        padding: 50px;
+        text-align: center;
+
+    }
+
+    div.padding-demo{
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    div.width-demo{
+        width:300px;
+        padding: 25px;
+        margin:25px;
+    }
+    div.shorthand-demo
+    {
+        padding: 25px;
+    }
+
+
+.default{
+    width:300px;
+    height:100px;
+    border: 1px solid blue;
+}
+
+.default-with-padding{
+    width:300px;
+    height:100px;
+    padding: 30px;
+    border: 1px solid red;
+
+}
+.demo-border-box{
+    width:300px;
+    height:100px;
+    padding: 30px;
+    border: 1px solid green;
+    box-sizing: border-box;
+
+}
+div.outline-demo{
+    background-color: lightgrey;
+    width:300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 20px;
+    outline: 25px solid red;
+}
+
+div.outline-offset-demo{
+    background-color: lightgrey;
+    width:300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 20px;
+    outline: 25px solid red;
+    outline-offset: 15px;
+}
+    
+</style>
+
+<body>
+    <h3><a href="./index.html">Back to home</a></h3>
+
+
+    <div class="default">Default box-sizing</div> <br>
+    <div class="default-with-padding">box-sizing:content-box</div> <br>
+    <div class="demo-border-box">box-sizing:border-box</div>
+
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:circle">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ul style="list-style-type:square">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+            <div class="padding-demo">Div with some content</div> <br><br>
+
+            <div class="shorthand-demo">Div with some content</div> <br><br>
+
+            <div class="outline-demo">Some Content</div>
+
+            <br><br>
+    
+            <div class="outline-offset-demo">Some Content</div>
+    
+
+
+    <h1 id="myHeader">Texas</h1>
+    <iframe src="https://w3schools.com"></iframe>
+    <img src="./anchortag.html"/>
+    
+    <button onclick="updateHeader()">Update Cities</button>
+    <script>
+        function updateHeader() {
+            document.getElementById("myHeader").innerHTML = "I love my state";
+        }
+    </script>
+</body>
+
+</html>
